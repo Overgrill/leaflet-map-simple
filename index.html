@@ -28,8 +28,8 @@
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
     center: [1.365443, 103.880821], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
-    scrollWheelZoom: false,
+    zoom: 18,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    scrollWheelZoom: true,
     tap: false
   });
 
@@ -42,8 +42,8 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  L.marker([1.365443, 103.880821]).addTo(map) // EDIT marker coordinates
+  .bindPopup("ORD personal home"); // EDIT pop-up text message
 
   </script>
 </body>
